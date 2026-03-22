@@ -97,6 +97,44 @@ footer a:hover { color: var(--white); }
 .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
 .footer-copy { font-size: 0.85rem; }
 
+/* ── 확장 카드 구조 ── */
+.support-card-header { display: flex; align-items: flex-start; gap: 0.8rem; flex-wrap: wrap; }
+.support-card-header-info { flex: 1; min-width: 0; }
+.support-card-header-info h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.2rem; }
+.card-summary { font-size: 0.82rem; color: var(--text-muted); line-height: 1.4; }
+.amount-badge { background: var(--primary); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.78rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; }
+.amount-badge.green { background: #16a34a; }
+.amount-badge.orange { background: #ea580c; }
+
+/* 추천 대상 박스 */
+.recommend-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 1rem; }
+.recommend-box strong { font-size: 0.85rem; color: #15803d; display: block; margin-bottom: 0.4rem; }
+.recommend-box ul { margin: 0; padding-left: 1.2rem; }
+.recommend-box li { font-size: 0.83rem; color: #166534; line-height: 1.6; }
+
+/* 자격 조건 표 */
+.eligibility-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.eligibility-table th { background: #f1f5f9; padding: 0.5rem 0.8rem; text-align: left; color: var(--text-muted); font-weight: 600; width: 88px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.eligibility-table td { padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--border); color: var(--text); line-height: 1.5; }
+.eligibility-table tr:last-child th, .eligibility-table tr:last-child td { border-bottom: none; }
+.eligibility-table tr:nth-child(even) td { background: #fafafa; }
+
+/* 필요 서류 박스 */
+.docs-box { background: #fef9c3; border: 1px solid #fde047; border-radius: 8px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.83rem; }
+.docs-box strong { color: #854d0e; display: block; margin-bottom: 0.3rem; }
+.docs-box span { color: #713f12; line-height: 1.6; }
+
+/* 지원 구분 헤더 (섹션 타이틀) */
+.sub-section-title { font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--primary); }
+
+/* 요약 테이블 (비교표) */
+.compare-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 1.5rem 0; }
+.compare-table th { background: var(--primary); color: white; padding: 0.7rem 1rem; text-align: left; }
+.compare-table td { padding: 0.7rem 1rem; border-bottom: 1px solid var(--border); }
+.compare-table tr:nth-child(even) td { background: #f8fafc; }
+.compare-table tr:hover td { background: var(--primary-light); }
+.compare-table .highlight { font-weight: 700; color: var(--primary); }
+
 /* 반응형 */
 @media (max-width: 768px) {
   .hero h1 { font-size: 1.6rem; }
