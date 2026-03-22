@@ -1,0 +1,10 @@
+{
+  "name": "지원넷 — 국가지원금 안내",
+  "short_name": "지원넷",
+  "description": "국가지원금·정부지원금 종합 안내 포털",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a56db",
+  "icons": [{"src": "icons/icon.svg","sizes": "any","type": "image/svg+xml"}]
+}
